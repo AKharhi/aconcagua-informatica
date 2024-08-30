@@ -1,0 +1,25 @@
+
+    {% extends "core/base.html" %}
+
+    {% block content %}
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Nuestros Servicios</h1>
+        
+
+      
+
+
+        <div class="col-md-4">
+            <div class="service-card">
+                <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.content }}</p>
+            
+            </div>
+        </div>
+
+        
+    </div>
+
+    {% endblock %}
+

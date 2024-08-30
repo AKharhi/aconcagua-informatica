@@ -1,0 +1,30 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container text-center my-5">
+    <h1>Bienvenido</h1>
+    <img src="{% static 'core/images/principal.png' %}" class="img-fluid rounded reduced-size"/>
+    <p class="mt-4">Su partner en soluciones tecnológicas innovadoras. Ofrecemos servicios de vanguardia para ayudar a su empresa a prosperar en la era digital.</p>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Nuestros Servicios Principales</h2>
+    <div class="row">
+        {% for post in posts %}
+        <div class="col-md-4">
+            <div class="service-card">
+                <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.content }}</p>
+                <a href="{% url 'servicios' id=post.id %}">Leer más </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="{% url 'servicios' %}" class="btn btn-primary">Ver todos nuestros servicios</a>
+    </div>
+</div>
+{% endblock %}
