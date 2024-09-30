@@ -76,12 +76,12 @@ WSGI_APPLICATION = "aconcagua_informatica.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'aconcagua_informatica',
-        'USER': 'capstone_team',
-        'PASSWORD': 'Kiarita557',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'informaticaaconcagua',
+        'USER': 'mysuperuser',
+        'PASSWORD': 'mysuperuser',
+        'HOST': 'informatica-aconcagua.clgw44uc4rik.us-east-2.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -125,3 +125,11 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# settings.py
+import os
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
