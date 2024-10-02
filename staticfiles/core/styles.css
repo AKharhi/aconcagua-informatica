@@ -1,0 +1,142 @@
+body {
+    background-color: #000;
+    color: #d4ff7f;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #00ffb3;
+}
+
+.navbar-brand, .nav-link {
+    color: #000 !important;
+}
+
+.footer {
+    background-color: #00ffb3;
+}
+
+.footer a {
+    color: #000;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h5 {
+    color: #d4ff7f;
+}
+
+.card {
+    background-color: #dce79a; /* Color de fondo de las tarjetas */
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.reduced-size {
+    width: 30%; /* Reduces the image width by 50% */
+    height: auto;
+}
+
+.footer .fab {
+    margin: 0 10px;
+    color: #000;
+}
+
+.footer .fab:hover {
+    color: #fff;
+}
+
+.navbar-brand .fa-mountain {
+    margin-left: 10px;
+    color: #000; /* Puedes ajustar el color según sea necesario */
+}
+
+.card-title {
+    color: #000; /* Color negro para el título */
+}
+
+.card-text {
+    color: #000; /* Color negro para el texto */
+}
+
+.card i {
+    color: #000; /* Color negro para los íconos */
+}
+
+.footer .col a {
+    display: block; /* Esto hace que cada enlace ocupe una línea completa */
+    margin-bottom: 5px; /* Añade un pequeño espacio entre los enlaces */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.mb-4 {
+    margin-bottom: 20px; /* Puedes ajustar el valor según el espacio deseado */
+}
+
+.btn-primary {
+    background-color: #d4ff7f;
+    border-color: #d4ff7f;
+    color: #000; /* Ajusta el color del texto si es necesario */
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #00ffb3; /* Un color ligeramente más oscuro para el estado de hover/focus/active */
+    border-color: #c4ee6f;
+    color: #000; /* Ajusta el color del texto si es necesario */
+}
+
+.c-5{
+    color: #d4ff7f;
+}
+
+.service-card {
+    background-color: #dce79a;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-card i {
+    color: #000000; /* Cambiado a negro */
+}
+.service-card h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+.service-card p {
+    color: #000000;
+}
