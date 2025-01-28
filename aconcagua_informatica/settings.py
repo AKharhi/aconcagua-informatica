@@ -66,13 +66,14 @@ WSGI_APPLICATION = "aconcagua_informatica.wsgi.application"
 
 DATABASES = {
     'default': {
-        # ... other settings ...
-        'OPTIONS': {'charset': 'utf8mb4'}, 
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'informaticas-aconcagua',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',  # O la IP del servidor de la BD
+        'PORT': '5432',  # Puerto por defecto de PostgreSQL
     }
 }
-
-database_url = os.environ.get("DATABASE_URL")
-DATABASES["default"] = dj_database_url.parse(database_url)
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
